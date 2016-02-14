@@ -1,0 +1,35 @@
+extends layout
+block main-content
+    form.form-horizontal( method='POST')
+      fieldset
+        legend.col-lg-offset-1 Registration
+        .form-group
+          label.col-lg-2.control-label(for='email' type='email') Email
+          .col-lg-4
+            input#email.form-control(type='text', placeholder='Email' name='email')    
+        .form-group
+          label.col-lg-2.control-label(for='username') Username
+          .col-lg-4
+            input#username.form-control(type='text', placeholder='Username' name='username')
+        .form-group
+          label.col-lg-2.control-label(for='firstName') First name
+          .col-lg-4
+            input#firstName.form-control(type='text', placeholder='First name' name='firstName')
+        .form-group
+          label.col-lg-2.control-label(for='lastName') Last name
+          .col-lg-4
+            input#lastName.form-control(type='text', placeholder='Last name' name='lastName')       
+        .form-group
+          label.col-lg-2.control-label(for='inputPassword') Password
+          .col-lg-4
+            input#inputPassword.form-control(type='text', placeholder='Password' name='password')    
+        .form-group
+          label.col-lg-2.control-label(for='confirmPassword') Confirm password
+          .col-lg-4
+            input#confirmPassword.form-control(type='text', placeholder='Confirm password' name='confirmPassword') 
+                       
+        .form-group
+          .col-lg-10.col-lg-offset-2
+            button.btn.btn-success(type='submit') Submit
+    
+    

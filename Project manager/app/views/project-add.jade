@@ -1,0 +1,23 @@
+extends layout
+block main-content
+    form.form-horizontal(action='/projects' method='POST')
+      fieldset
+        legend Give a basic description of your project
+        .form-group
+          label.col-lg-2.control-label(for='name') Project name
+          .col-lg-4
+            input#name.form-control(type='text', placeholder='Project name' name='name')
+        .form-group
+          label.col-lg-2.control-label(for='inputPassword') Estimate deadline
+          .col-lg-4
+            input#inputPassword.form-control(type='text', placeholder='Estimate deadline' name='deadline')
+        .form-group
+          label.col-lg-2.control-label(for='description') Description
+          .col-lg-4
+            textarea#description.form-control(rows='4' name='description')
+          
+        .form-group
+          .col-lg-10.col-lg-offset-2
+            button.btn.btn-success(type='submit') Create
+          //-  button.btn.btn-default(type='reset') Cancel
+          

@@ -1,0 +1,21 @@
+{
+  "name": "manageprojects",
+  "description": "",
+  "main": "app.js",
+  "authors": [
+    "dmarkov00 <dmarkov23@gmail.com>"
+  ],
+  "license": "ISC",
+  "moduleType": [],
+  "homepage": "",
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ],
+  "dependencies": {
+    "bootstrap": "^3.3.6"
+  }
+}

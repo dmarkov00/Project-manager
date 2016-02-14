@@ -1,0 +1,21 @@
+doctype html
+html
+  head
+    link(href="/components/bootstrap/dist/css/bootstrap.css", rel="stylesheet")
+  body
+    nav.navbar.navbar-default
+      .container-fluid
+        .navbar-header
+          a.navbar-brand PROJECT MANAGER
+          ul.nav.navbar-nav
+            li
+              a(href='/home') Home            
+            li
+              a(href='/projects') Projects 
+            li
+              a(href='/projects/add') Add new project
+            li
+              a(href='/user/login') Login           
+    .jumbotron
+        block main-content
+      

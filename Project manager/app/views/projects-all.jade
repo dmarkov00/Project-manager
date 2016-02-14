@@ -1,0 +1,9 @@
+extend layout
+block main-content
+  h2 Click for project details
+  ul(style="list-style: none;")
+  each project in data
+    li
+      a(href='/projects/' + project._id)
+        h3= project.name
+    
